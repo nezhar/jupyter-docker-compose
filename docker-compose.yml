@@ -1,7 +1,9 @@
 version: '3'
 services:
   jupyter:
-    build: ./docker/jupyter
+    build: 
+      context: .
+      dockerfile: ./docker/jupyter/Dockerfile
     volumes:
       - ./work:/home/jovyan/work
     ports:
