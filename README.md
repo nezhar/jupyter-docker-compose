@@ -23,7 +23,9 @@ Navigate to the project root directory:
 cd jupyter-docker-compose
 ```
 
-Build the the image for the Jupyter Notebook server:
+Change the token in the docker compose file.
+
+Build the image for the Jupyter Notebook server:
 
 ```bash
 docker compose build
