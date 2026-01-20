@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: ./docker/jupyter/Dockerfile
     volumes:
-      - ./..:/home/jovyan/work
+      - ./work:/home/jovyan/work
     ports:
       - 8888:8888
     command: "start-notebook.py --NotebookApp.token=token"
